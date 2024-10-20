@@ -1,5 +1,5 @@
-1. ![[Lab3Ex1.png]]
-
+1. 
+![[Images/Lab3Ex1.png]]
 - ``msd.v``
 ```verilog
 module msd (
@@ -63,7 +63,7 @@ quit -sim
 ```
 
 2. 
-![[Lab3Ex2.png]]
+![[Images/Lab3Ex2.png]]
 - ``div3.v``
 ```verilog
 module div3 (
@@ -141,8 +141,8 @@ run -all
 quit -sim
 ```
 
-3. ![[Lab3Ex3.png]]
-
+3. 
+![[Images/Lab3Ex3.png]]
 - ``cnt1s.v``
 ```verilog
 module cnt1s (
@@ -179,8 +179,8 @@ module cnt1s_tb;
 endmodule
 ```
 
-4. ![[Lab3Ex4.png]]
-
+4. 
+![[Images/Lab3Ex4.png]]
 - ``seq3b.v``
 ```verilog
 module seq3b (
@@ -243,7 +243,7 @@ quit -sim
 ```
 
 5. 
-![[Lab3Ex5.png]]
+![[Images/Lab3Ex5.png]]
 
 - ``mul5bcd.v``
 ```verilog
@@ -306,8 +306,8 @@ run -all
 quit -sim
 ```
 
-6. ![[Lab3Ex6.png]]
-
+6. 
+![[Images/Lab3Ex6.png]]
 - ``text2nibble.v``
 ```verilog
 module text2nibble (
