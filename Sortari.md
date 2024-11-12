@@ -72,7 +72,7 @@
 - 57 59 53 52 54 56 58 55
 
 Arbore initial:
-                    57
+			57
 		59     53
 	52    54 56  58
 55
@@ -88,7 +88,7 @@ In caul nostru, ultimul nod parinte este 52 = Index3
 (Index2) 56 > 53? (da) ; 58 > 53? (da), deci ne mutam pe urmatorul index
 (Index1) 52 > 59? (nu) ; 54 > 59? (nu), deci il alegem pe cel mai mic, 52, deci interschimbam 59 cu 52, deci configuratia arborelui se schimba.
 
-                    57
+			57
 		52     53
 	59    54 56  58
 55
@@ -102,13 +102,13 @@ Punem din nou indexii... (se pun direct pe graf)
 Ne intoarcem la indexul principal, deoarece 59 nu mai are niciun fiu
 
 (Index0) 52 > 57? (nu) ; 53 > 57? (nu), deci 57 face schimb cu 52
-                    52
+			52
 		57     53
 	59    54 56  58
 55
 
 (IndexTemporar1 = 57) 55 > 57? (nu); 54 > 57? (nu), deci 57 face schimb cu 54
-                    52
+			52
 		54     53
 	59    57 56  58
 55
