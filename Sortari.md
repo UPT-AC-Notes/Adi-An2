@@ -1,38 +1,38 @@
 - Test sapt 7 (quiz)
-	- sa se scrie configuratia tabloului dupa fiecare pas al sortarii prin interschimbare (bubble sort) considerand ca parcugerea se face de la dreapta la stanga / st la dr si un pas contine o comparatie si max o interschimbare
+    - sa se scrie configuratia tabloului dupa fiecare pas al sortarii prin interschimbare (bubble sort) considerand ca parcugerea se face de la dreapta la stanga / st la dr si un pas contine o comparatie si max o interschimbare
 
 # Sortari simple (pt quiz):
 ### Bubblesort (interschimbare) 
 - ``stanga -> dreapta (crescator)`` (se poate schimba la test)
 - ``39 15 71 25`` (asa se cere la test compararea pe pozitii, chiar daca asta nu e implementarea bubblesort)
-	- ``15 39 71 25`` = Pas1 (am comparat 39 cu 15)
-	- ``15 39 71 25`` = Pas2 (am comparat 39 cu 71)
-	- ``15 39 25 71`` = Pas3 (am comparat 71 cu 25)
-	- ``15 39 25 71`` = Pas4 (am comparat 15 cu 39)
-	- ``15 25 39 71`` = Pas5 (am comparat 39 cu 25)
+    - ``15 39 71 25`` = Pas1 (am comparat 39 cu 15)
+    - ``15 39 71 25`` = Pas2 (am comparat 39 cu 71)
+    - ``15 39 25 71`` = Pas3 (am comparat 71 cu 25)
+    - ``15 39 25 71`` = Pas4 (am comparat 15 cu 39)
+    - ``15 25 39 71`` = Pas5 (am comparat 39 cu 25)
 
 ### Shakersort (sortare prin amestecare)
 - primul for de la dreapta la stanga si aplicam bubble sort
 - al doilea for de la st la dr si aplicam bubble sort
 - ``crescator`` (poate varia la test)
 - ``32 19 71 23``
-	- Primul for:
-	- ``32 19 23 71`` (am comparat 71 cu 23)
-	- ``32 19 23 71`` (am comparat 23 cu 71)
-	- ``19 32 23 71`` (am comparat 32 cu 19) = Acesta este considerat Pasul 1 (pt ca am ajuns la capat)
-	- Al doilea for:
-	- ``19 32 23 71`` (am comparat 19 cu 32)
-	- ``19 23 32 71`` (am comparat 32 cu 23)
-	- ``19 23 32 71`` (am comparat 32 cu 71) = Acesta este Pasul 2 (am ajuns la final)
+    - Primul for:
+    - ``32 19 23 71`` (am comparat 71 cu 23)
+    - ``32 19 23 71`` (am comparat 23 cu 71)
+    - ``19 32 23 71`` (am comparat 32 cu 19) = Acesta este considerat Pasul 1 (pt ca am ajuns la capat)
+    - Al doilea for:
+    - ``19 32 23 71`` (am comparat 19 cu 32)
+    - ``19 23 32 71`` (am comparat 32 cu 23)
+    - ``19 23 32 71`` (am comparat 32 cu 71) = Acesta este Pasul 2 (am ajuns la final)
 
 ### Inserstsort (insertie)
 - comparam elementele din multimea sortata cu elementele din multimea nesortata si le inseram la locul potrivit
 - pornim de la ``stanga crescator`` (poate varia la test)
 - initial multimea sortata va fi goala, deci consideram ca fiind formata doar din primul element
 - MN = ``39 11 73 29``; MS = ``39`` (multimea sortata)
-	- MN = ``11 39 73 29``; MS = ``11 39`` -- Pas1
-	- MN = ``11 39 73 29`` ; MS = ``11 39 73`` (nu este considerat un pas pt ca n a avut loc nicio interschimare)
-	- MN = ``11 29 39 73`` -- Pas2
+    - MN = ``11 39 73 29``; MS = ``11 39`` -- Pas1
+    - MN = ``11 39 73 29`` ; MS = ``11 39 73`` (nu este considerat un pas pt ca n a avut loc nicio interschimare)
+    - MN = ``11 29 39 73`` -- Pas2
 
 - ``stanga descrescator``
 - MN = ``10 40 20 30``; MS = ``10``
@@ -44,25 +44,25 @@
 
 - ``crescator``
 - caut minimul(in dreapta) si fac schimb de pozitii in sir
-	- daca nu gasesc minimul, atunci scriu sirul identic si trec la elementul urmator (si acesta este pas)
-	
+    - daca nu gasesc minimul, atunci scriu sirul identic si trec la elementul urmator (si acesta este pas)
+    
 - ``30 17 76 21`` (suntem la 30,  minimul este 17)
-	- ``17 30 76 21``  = Pas1 (suntem la 30, minimul este 21)
-	- ``17 21 76 39`` = Pas2 (suntem la 76, minimul este 39)
-	- ``17 21 39 76`` = Pas3
+    - ``17 30 76 21``  = Pas1 (suntem la 30, minimul este 21)
+    - ``17 21 76 39`` = Pas2 (suntem la 76, minimul este 39)
+    - ``17 21 39 76`` = Pas3
 
 - ``40 30 90 50`` (suntem la 40, minimul este 30)
-	- ``30 40 90 50`` = Pas1 (suntem la 40, minimul este 40)
-	- ``30 40 90 50`` = Pas2 (suntem la 90, minimul este 50)
-	- ``30 40 50 90`` = Pas3
+    - ``30 40 90 50`` = Pas1 (suntem la 40, minimul este 40)
+    - ``30 40 90 50`` = Pas2 (suntem la 90, minimul este 50)
+    - ``30 40 50 90`` = Pas3
 
 
 - ``descrescator``
 - caut maximul(in dreapta) si fac schimb de pozitii in sir
 - ``23 19 61 29`` (suntem la 23, maximul este 61)
-	- ``61 19 23 29`` = Pas1 (suntem la 19, maximul este 29)
-	- ``61 29 23 19`` = Pas2 (suntem la 23, maximul este 23)
-	- ``61 29 23 19`` = Pas3
+    - ``61 19 23 29`` = Pas1 (suntem la 19, maximul este 29)
+    - ``61 29 23 19`` = Pas2 (suntem la 23, maximul este 23)
+    - ``61 29 23 19`` = Pas3
 
 
 # Sortari avansate:
@@ -72,9 +72,9 @@
 - 57 59 53 52 54 56 58 55
 
 Arbore initial:
-			57
-		59     53
-	52    54 56  58
+            57
+        59     53
+    52    54 56  58
 55
 Punem indexii: 57 = Index0, 59 = Index1, 53 = Index2, 52 = Index3, 54 = Index4, 56 = Index5, 58 = Index6, 55 = Index7
 
@@ -88,29 +88,29 @@ In caul nostru, ultimul nod parinte este 52 = Index3
 (Index2) 56 > 53? (da) ; 58 > 53? (da), deci ne mutam pe urmatorul index
 (Index1) 52 > 59? (nu) ; 54 > 59? (nu), deci il alegem pe cel mai mic, 52, deci interschimbam 59 cu 52, deci configuratia arborelui se schimba.
 
-			57
-		52     53
-	59    54 56  58
+            57
+        52     53
+    59    54 56  58
 55
 Punem din nou indexii... (se pun direct pe graf)
 
 (IndexTemporar3 = 55, deoarece Indexul principal nu se schimba ca sa ne putem intoarce dupa la el) 55 > 59? (nu), deci interschimbam, iar arborele devine:
-			57
-		52     53
-	55    54 56  58
+            57
+        52     53
+    55    54 56  58
 59
 Ne intoarcem la indexul principal, deoarece 59 nu mai are niciun fiu
 
 (Index0) 52 > 57? (nu) ; 53 > 57? (nu), deci 57 face schimb cu 52
-			52
-		57     53
-	59    54 56  58
+            52
+        57     53
+    59    54 56  58
 55
 
 (IndexTemporar1 = 57) 55 > 57? (nu); 54 > 57? (nu), deci 57 face schimb cu 54
-			52
-		54     53
-	59    57 56  58
+            52
+        54     53
+    59    57 56  58
 55
 (IndexTemporar4 = 56) nu mai are niciun fiu, deci revenim la Indexul principal
 nu mai putem traversa prin ascensiune de la Index0, deci aici se incheia pas1, deci pas1 = ``52, 54, 53, 55, 57, 56, 58, 59``
@@ -121,15 +121,15 @@ nu mai putem traversa prin ascensiune de la Index0, deci aici se incheia pas1, d
 
 - Fie ``H[i] = 4``, deci grupam elementele cate ``4``
 - ``51 53 59 57 50 52 56 54 58``; sa se scria Pasul 1
-	- G1(grupa 1) = ``51 53 59 57`` G2 = ``50 52 56 54`` G3 = ``58``, apoi le punem una sub alta 
-	- ``51 53 59 57`` 
-	- ``50 52 56 54``
-	- ``58``
-	- Le luam pe coloane si le sortam, deci devin =>
-		- ``50 52 56 54`` 
-		- ``51 53 59 57``
-		- ``58``
-	- Raspunsul final pentru exercitiul asta este: ``50 52 56 54 51 53 59 57 58``
+    - G1(grupa 1) = ``51 53 59 57`` G2 = ``50 52 56 54`` G3 = ``58``, apoi le punem una sub alta 
+    - ``51 53 59 57`` 
+    - ``50 52 56 54``
+    - ``58``
+    - Le luam pe coloane si le sortam, deci devin =>
+        - ``50 52 56 54`` 
+        - ``51 53 59 57``
+        - ``58``
+    - Raspunsul final pentru exercitiul asta este: ``50 52 56 54 51 53 59 57 58``
 
 - Nu se cere la test, dar urmatorul pas ar fi sa scadem indicele ``H[i]`` => ``H[i]=3``
 
@@ -138,11 +138,11 @@ nu mai putem traversa prin ascensiune de la Index0, deci aici se incheia pas1, d
 ```
 Ne uitam doar la primul element, si il punem pe pozitia lui, inteschimbandu-l cu cel care e deja pe pozitia lui.
 Index = 0 1 2 3 4 5 6
-		3 5 1 6 0 4 2
-		6 5 1 3 0 4 2
-		2 5 1 3 0 4 6
-		1 5 2 3 0 4 6
-		5 1 2 3 9 4 6
+        3 5 1 6 0 4 2
+        6 5 1 3 0 4 2
+        2 5 1 3 0 4 6
+        1 5 2 3 0 4 6
+        5 1 2 3 9 4 6
 ```
 
 ### Quicksort (cu pivot median)
