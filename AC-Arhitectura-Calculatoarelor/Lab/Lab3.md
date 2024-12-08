@@ -315,7 +315,7 @@ module text2nibble (
   output reg [3:0] o
 );
   always @(*) begin
-    o = (i >= 30 && i <= 39) ? i - 30 : 15;
+    o = (i >= 8'h30 && i <= 8'h39) ? i - 8'h30 : 4'hF;
   end
 endmodule
 
