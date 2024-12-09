@@ -1,4 +1,4 @@
-![[TestEx1.png]]
+![](./images/TestEx1.png)
 
 - ``lss5b.v``
 ```verilog
@@ -38,7 +38,7 @@ module lss5b(
 endmodule
 ```
 
-![[TestEx2.png]]
+![](./Images/TestEx2.png)
 
 - ``bcm.v``
 ```verilog
@@ -82,7 +82,7 @@ module bcm_tb;
 endmodule
 ```
 
-![[TestEx3.png]]
+![](./Images/TestEx3.png)
 - ``fsmm.v``
 ```verilog
 module fsmm (
@@ -179,7 +179,7 @@ module fsmm_tb;
 endmodule
 ```
 
-![[TestEx4.png]]
+![](./Images/TestEx4.png)
 - ``regfl_4x8.v``
 ```verilog
 module regfl_4x8 (
