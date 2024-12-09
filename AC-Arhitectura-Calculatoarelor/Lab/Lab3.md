@@ -9,7 +9,7 @@ module msd (
   output reg [3:0] o
 );
   always @(*) begin
-    o = i/10;
+    o = i/10; // pentru ca executam logica combinationala, nu este nevoie sa folosim assignment asincron '<=' ca la logica secventiala
   end
 endmodule
 
