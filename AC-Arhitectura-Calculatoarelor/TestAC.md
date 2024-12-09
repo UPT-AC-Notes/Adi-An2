@@ -31,7 +31,7 @@ module lss5b(
     d_ff dff0 (.clk(clk), .rst_b(1'b1), .set_b(rst_b), .d(q[4]), .q(q[0]));
     d_ff dff1 (.clk(clk), .rst_b(1'b1), .set_b(rst_b), .d(q[0]), .q(q[1]));
     d_ff dff2 (.clk(clk), .rst_b(1'b1), .set_b(rst_b), .d(q[1]), .q(q[2]));
-    d_ff dff3 (.clk(clk), .rst_b(1'b1), .set_b(rst_b), .d(q[2] & q[4]), .q(q[3]));
+    d_ff dff3 (.clk(clk), .rst_b(1'b1), .set_b(rst_b), .d(q[2] | q[4]), .q(q[3]));
     d_ff dff4 (.clk(clk), .rst_b(1'b1), .set_b(rst_b), .d(q[3] ^ q[4]), .q(q[4]));
   
 
