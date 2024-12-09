@@ -9,14 +9,14 @@
 ![](../Images/T3Ex5.png)
 
 ![](../Images/T3Ex6.png)
--  Rezumat al PDU-urilor:
+-  Rezumat al PDU-urilor (numaratoarea nivelelor incepe de jos in sus):
 
 | **Nivel TCP/IP**       | **PDU**              |
 | ---------------------- | -------------------- |
-| Aplicație              | **Date (Data)**      |
-| Transport              | **Segment/Datagram** |
-| Internet               | **Pachet (Packet)**  |
-| Rețea/Legătură de Date | **Cadru (Frame)**    |
+| 4. Aplicație              | **Date (Data)**      |
+| 3. Transport              | **Segment/Datagram** |
+| 2. Internet               | **Pachet (Packet)**  |
+| 1. Rețea/Legătură de Date | **Cadru (Frame)**    |
 
 ![](../Images/T3Ex7.png)
 
