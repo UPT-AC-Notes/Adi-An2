@@ -1,3 +1,5 @@
+## Proiectarea modulelor parametrizate in Verilog
+
 ![](../Images/Lab5Ex1.png)
 
 - ``dec_2s.v``

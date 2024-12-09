@@ -1,3 +1,5 @@
+## Arhitecturi de detectie a erorilor in Verilog
+
 ![](../Images/Lab9Ex1.png)
 
 - ``d_ff.v``

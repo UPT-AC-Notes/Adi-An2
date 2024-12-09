@@ -1,3 +1,5 @@
+## Utilizarea procedurilor structurate pentru descrierea structurilor secventiale sincrone 
+#### (Modelarea in Verilog utilizaand blocuri always si initial)
 1. 
 ![](../Images/Lab3Ex1.png)
 - ``msd.v``

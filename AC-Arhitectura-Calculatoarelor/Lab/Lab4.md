@@ -1,3 +1,5 @@
+## Construirea ierarhica a arhitecturilor in Verilog
+
 ![](../Images/Lab4Ex1.png)
 ![](../Images/Lab4Ex2.png)
 
