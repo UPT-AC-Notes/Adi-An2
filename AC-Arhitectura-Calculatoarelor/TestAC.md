@@ -1,4 +1,4 @@
-![](./images/TestEx1.png)
+![](./Images/TestEx1.png)
 
 - ``lss5b.v``
 ```verilog
