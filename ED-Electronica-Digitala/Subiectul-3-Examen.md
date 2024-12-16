@@ -15,3 +15,9 @@
 | 1   | 0   | 1            |
 | 1   | 1   | 0            |
 
+### Exemplul 2 (RC-trece-sus)
+![](Images/S3Ex2.png)
+
+### Exemplul 3
+![](Images/S3Ex3.png)
+![](Images/RS3Ex3.png)
