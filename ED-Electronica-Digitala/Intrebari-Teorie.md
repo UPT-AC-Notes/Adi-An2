@@ -32,7 +32,7 @@
 7. ``?``Cum se numește modul de funcționare al celor două tranzistoare de la ieșirea circuitelor integrate TTL?
 - Modul de funcționare al celor două tranzistoare într-un circuit TTL la ieșire se numește **"circuit de emitor comun"** sau, mai specific, **"logică cu emitor comun"**
 
-8. Pentru a se evita intrarea unui tranzistor într0un regim saturat puternic, se utilizează în practică un tranzistor compus. Cum este folosit?
+8. Pentru a se evita intrarea unui tranzistor într-un regim saturat puternic, se utilizează în practică un tranzistor compus. Cum este folosit?
 - Tranzistorul compus este folosit în practică pentru construirea circuitelor TTL.
 - ![](Images/REx4.png)
 
