@@ -42,7 +42,7 @@
 	- $FI_{H}$ - factorul de încărcare la intrare pentru „1 logic”
 
 10. Ce mărime electrica definește factorii de încărcare la intrare?
-- Rezistenta, capacitatea
+- Capacitatea
 
 11. Ce avantaje decurg din faptul că circuitul de ieșire aferent circuitelor integrate TTL (cele două tranzistoare de la ieșire) lucrează în contra-timp?
 - impedanțe de ieșire mici pentru cele două stări logice
@@ -66,8 +66,8 @@
 15. De ce două porți TTL nu pot avea ieșirea comună? Ce împiedică acest lucru?
 - Parametrii porții se pot modifica, (dacă tranzistoarele nu se distrug prin ambalare termică) pierzându-se imunitatea la zgomot. Pentru a cupla, totuși, în paralel mai multe porți se utilizează circuite cu colector în gol.
 
-16. Care ar fi valoarea ideală a unui factor de încărcare de ieșire la circuitele integrate numerice?
-- Valoarea ideală a factorului de încărcare trebuie să fie cât se poate de mare pentru circuitul respectiv. Factorul de încărcare (F. Î.) se ia ca fiind valoarea minimă dintre F. Î. la ieșire pentru „0 logic” și F. Î. la ieșire pentru „1 logic”.
+16. Care ar fi valoarea ideală a factorului de încărcare la intrare/ieșire?
+- Factorul de încărcare reprezintă raportul dintre capacitatea de intrare a porților conectate și capacitatea de ieșire a porții conducătoare. Pentru TTL, factorul de încărcare ideal este 1, ceea ce înseamnă că o poartă logică poate conduce exact o altă poartă logică fără să degradeze performanțele.
 
 17. Enumerați tipurile de circuite integrate numerice, după gradul de integrare.
 - circuite integrate pe scară mică (SSI – small scale integration)
@@ -96,8 +96,7 @@
 - Parametrii enumerați se iau din catalogul circuitului.
 
 22.  Ce rol are capacitatea de accelerare?
-- Rolul condensatorului este ca în regim tranzitoriu (pe durata frontului semnalului de intrare) să asigure o impedanță mică, în paralel cu rezistența $R_b$, și să mărească în acest timp valoarea curentului $I_b$.
-- ![](Images/Ex22.png)
+- Micșorează timpii de comutare ai tranzistorului bipolar. Totuși costurile sunt mari și pot apărea întârzieri și consum crescut de energie, deci se evită integrarea unor astfel de capacități într-un circuit numeric.
 
 23. Cum se modifică capacitatea parazită odată cu nivelul de integrare?
 - Aceasta crește
@@ -138,4 +137,36 @@ $$ \text{tc} = R \cdot C \cdot \ln\left(\frac{V_L - V_H}{V_L - V_T}\right) $$
 33. Cum se numește tranzistorul de la intrarea TTL? 
 - Tranzistor multiemitor
 
+34. 
 ![](Images/SchemaDiode.png)
+
+35. Ce caracterizează tranzistorul bipolar saturat? 
+- În acest caz, curentul prin tranzistor este cel mai mare, deoarece tranzistorul bipolar saturat se comportă ca un întrerupător închis, curentul emitor-colector fiind independent de curentul bazei. Acest fapt se datorează polarizării directe bază-colector și bază-emitor.
+
+36. Ce regimuri de funcționare a unui tranzistor bipolar asigură diferența maximă a nivelelor de tensiune?
+- Între regimurile de funcționare BLOCAT și SATURAT există cea mai mare diferență de tensiune. Cu cât diferența dintre nivelele corespondente celor două stări este mai mare, cu atât funcționarea tranzistorului este mai bună.
+
+37. De ce nu se poate utiliza la circuitele integrate numerice o capacitate de accelerare?
+- În circuitele integrate numeric nu se utilizează capacități de accelerare pentru a proteja performanța, eficiența și viteza de operare a acestora. Capacitățile mari de încărcare pot duce la întârzieri și consum crescut de energie, ceea ce poate duce la compromiterea unui sistem.
+
+38. De ce circuitul RC-trece-jos poate simula un circuit numeric? Explicați pe scurt.
+- Deoarece circuitul RC-trece-jos este un filtru care permite trecerea semnalelor de frecvență joasă cu distorsiuni minime și atenuarea puternică a semnalelor de frecvență înaltă. Acest comportament este similar cu modul în care un sistem numeric tratează semnalele.
+
+39. Factorul de încărcare de la ieșirea circuitelor integrate numerice se exprimă printr-un număr întreg și pozitiv. Această afirmație este validă și dacă se folosesc circuite din serii diferite?
+- Afirmația este corectă și se aplică indiferent dacă se folosesc circuite din serii diferite. Factorul de încărcare este un număr întreg și pozitiv, dar totuși trebuie să se țină cont de caracteristicile electrice ale fiecărui tip de circuit integrat și de condițiile de încărcare ale ieșirii.
+
+40. De ce tranzistorul bipolar este numit producător de curent de colector?
+- Deoarece curentul de colector $I_c$ este generat și amplificat prin controlul unui curent mult mai mic de bază $I_b$. Prin amplificarea curentului de bază, tranzistorul generează un curent de colector mai mare, ceea ce îl face un element cheie în procesele de amplificare și comutare în circuitele electronice.
+
+41. De ce se numește RC-trece-sus?
+- Circuitul RC-trece-sus își primește numele datorită comportamentului său de a permite trecerea frecventelor înalte și de a atenua frecvențele joase. Astfel, circuitul blochează frecvențele joase, „lăsând să treacă” frecvențele înalte.
+
+42. Care este ecuația de bază a unui tranzistor bipolar?
+- $I_c = \alpha * I_E + I_{C0}$
+- $\alpha$ = factor de amplificare 
+- $I_{C0}$ = curent rezidual
+
+43. Care sunt timpii de comutare ai unui tranzistor bipolar?
+- Timpii de comutare sunt timpul de ridicare si cel de cădere.
+- Timpul de ridicare reprezintă timpul necesar pentru a permite curentului de colector să crească de la valoarea sa inițială la valoarea sa maximă când tranzistorul trece din starea de blocare în starea activă.
+- Timpul de cădere reprezintă timpul necesar pentru a permite curentului de colector să cadă de la valoarea sa maximă la valoarea aproape zero, când tranzistorul trece din starea activă sau saturată în starea de blocaj.
