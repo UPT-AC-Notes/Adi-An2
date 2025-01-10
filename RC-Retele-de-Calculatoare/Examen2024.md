@@ -7,7 +7,7 @@ Pentru subnetare ne vom imprumuta de la bitii de host.
 
 Ne dorim subnetare in 4 subretele => avem nevoie de 2 biti pentru a le diferentia
 => Masca subretelelor (bitii rezervati pentru partea de retea) va fi 24+2=26, ramanandu-ne 32-26=6 biti pentru partea de host a fiecarei subretele.
-=> 2^6-2(rezervat pentru adresa retelei si adresa de broadcast) = 62-2 = 62 (numarul maxim de host-uri al fiecarei subretele).
+=> 2^6-2(rezervat pentru adresa retelei si adresa de broadcast) = 64-2 = 62 (numarul maxim de host-uri al fiecarei subretele).
 Daca ni se cere a X-a adresa din subretea, unde X > 62, orice raspuns va fi gresit.
 
 1. Ar1 = (adresa subretelei 1)
