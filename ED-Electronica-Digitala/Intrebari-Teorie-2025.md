@@ -14,10 +14,9 @@
 ---
 
 - Reprezentați grafic dioda în conducție și dioda blocată într-un circuit numeric.
-- ``Ud`` = tensiunea de la intrarea diodei, ``Vt`` = tensiunea de prag
-![](Images/E2024Ex3.1.png)
-
-![](Images/E2024Ex3.2.png)
+- ``Ud = tensiunea de la intrarea diodei, Vt = tensiunea de prag``
+- ![](Images/E2024Ex3.1.png)
+- ![](Images/E2024Ex3.2.png)
 
 ---
 ## Poarta ȘI cu diode semiconductoare
@@ -33,7 +32,8 @@
 
 ## Poarta SAU cu diode semiconductoare
 
-![](Images/PoartaSauDiode1.png)![](Images/PoartaSauDiode2.png)
+![](Images/PoartaSauDiode1.png)
+![](Images/PoartaSauDiode2.png)
 ![](Images/PoartaSauDiode3.png)
 ![](Images/PoartaSauDiode4.png)
 
