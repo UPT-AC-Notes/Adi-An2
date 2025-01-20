@@ -18,7 +18,7 @@
 - ``32 19 71 23``
     - Primul for:
     - ``32 19 23 71`` (am comparat 71 cu 23)
-    - ``32 19 23 71`` (am comparat 23 cu 71)
+    - ``32 19 23 71`` (am comparat 23 cu 19)
     - ``19 32 23 71`` (am comparat 32 cu 19) = Acesta este considerat Pasul 1 (pt ca am ajuns la capat)
     - Al doilea for:
     - ``19 32 23 71`` (am comparat 19 cu 32)
